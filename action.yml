@@ -7,16 +7,13 @@ inputs:
     default: 'cli'
   cli:
     description: 'additional cli'
-    required: true
-    default: ''
+    required: false
   infile:
     description: 'infile'
     required: false
-    default: 'infile'
   outfile:
     description: 'outfile'
     required: false
-    default: 'outfile'
 runs:
   using: 'docker'
   image: 'docker://mborejdo/action-rusty'
